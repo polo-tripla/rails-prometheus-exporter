@@ -17,9 +17,6 @@ Gem::Specification.new do |spec|
 
   spec.post_install_message = "prometheus_exporter will only bind to localhost by default as of v0.5"
 
-  spec.files = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features|bin)/})
-  end
   spec.bindir               = "bin"
   spec.executables          = ["prometheus_exporter"]
   spec.require_paths        = ["lib"]
